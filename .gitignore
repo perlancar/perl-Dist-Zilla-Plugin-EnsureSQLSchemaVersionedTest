@@ -1,3 +1,3 @@
-Dist-Zilla-Plugin-Prereqs-EnsureCoreOrPP-*
+Dist-Zilla-Plugin-EnsureSQLSchemaVersionedTest-*
 .build
 *~
