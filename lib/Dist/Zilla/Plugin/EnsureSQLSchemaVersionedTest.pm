@@ -18,8 +18,10 @@ sub setup_installer {
 
     # XXX should've checked found_files instead, to handle generated files
     if (defined($rr_prereqs->{"SQL::Schema::Versioned"}) &&
-            !(-f "xt/author/sql_schema_versioned.t")) {
-        $self->log_fatal(["SQL::Schema::Versioned is in prereq, but xt/author/sql_schema_versioned.t has not been added, please make sure that your schema is tested by adding that file"]);
+            !(-f "xt/author/sql_schema_versioned.t") &&
+            !(-f "xt/release/sql_schema_versioned.t")
+        ) {
+        $self->log_fatal(["SQL::Schema::Versioned is in prereq, but xt/{author,release}/sql_schema_versioned.t has not been added, please make sure that your schema is tested by adding that file"]);
     }
 }
 
