@@ -1,5 +1,3 @@
-Revision history for Dist-Zilla-Plugin-EnsureSQLSchemaVersionedTest
-
 0.02    2016-02-11 (PERLANCAR)
 
 	- Also allow the test to be in xt/release/ in addition to
