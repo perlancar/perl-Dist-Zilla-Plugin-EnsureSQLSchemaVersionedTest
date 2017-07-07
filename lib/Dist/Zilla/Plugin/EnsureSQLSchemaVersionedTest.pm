@@ -8,9 +8,9 @@ use strict;
 use warnings;
 
 use Moose;
-with 'Dist::Zilla::Role::InstallTool';
+with 'Dist::Zilla::Role::AfterBuild';
 
-sub setup_installer {
+sub after_build {
     my ($self) = @_;
 
     my $prereqs_hash = $self->zilla->prereqs->as_string_hash;
