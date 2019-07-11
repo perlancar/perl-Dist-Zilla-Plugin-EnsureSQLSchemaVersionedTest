@@ -1,15 +1,15 @@
-0.03    2017-07-07 (PERLANCAR)
+0.03    2017-07-07  Released-By: PERLANCAR
 
 	- Switch from (ab)using InstallTool phase to using AfterBuild phase
 	  to do our stuffs, to be compatible with DZP:StaticInstall.
 
 
-0.02    2016-02-11 (PERLANCAR)
+0.02    2016-02-11  Released-By: PERLANCAR
 
 	- Also allow the test to be in xt/release/ in addition to
 	  xt/author/.
 
 
-0.01     2015-04-22 (PERLANCAR)
+0.01     2015-04-22  Released-By: PERLANCAR
 
          - First release.
